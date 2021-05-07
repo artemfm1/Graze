@@ -23,3 +23,28 @@ function App() {
 }
 
 export default App;
+
+import useEffect, useState from "react";
+function Form() {
+    const [username, setUsername] = useEffect("");
+    const [password, setPassword] = useState("");
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const newUser = {
+            username,
+            password,
+        }
+        await axios.post("https://someapithatisnotairtable.com/", newUser);
+        props.setToggleFetch((curr) => !curr);
+    }
+    render (
+        <form>
+            <label htmlFor="username">Username:</label>
+            <input type="text" value={username} onClick={(e) => setUsername(e.target.value)} />
+            <label htmlFor="password">Password:</label>
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <button onSubmit={handleSubmit}>Submit!</button>
+        </form>
+    )
+}
+export default useEffect;

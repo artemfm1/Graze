@@ -24,9 +24,9 @@ EXAMPLE RESPONSE
         {
             "id": "recjh8F0VXLt9sIT1",
             "fields": {
-                "Restaurant": "Satay",
-                "Location": "Hoboken",
-                "favorite dishes": "Ayam Kelapa",
+                "location": "Hoboken",
+                "restaurant": "Satay",
+                "favoriteDish": "Ayam Kelapa",
                 "review": "Excellent food, great service. Closed on Wednesdays"
             },
             "createdTime": "2021-05-07T01:04:59.000Z"
@@ -34,9 +34,9 @@ EXAMPLE RESPONSE
         {
             "id": "recI18HoMsgTsKHKL",
             "fields": {
-                "Restaurant": "Casa de Paco",
-                "Location": "Newark",
-                "favorite dishes": "Octopus",
+                "location": "Newark",
+                "restaurant": "Casa de Paco",
+                "favoriteDish": "Octopus",
                 "review": "Great food, nice place to go out to "
             },
             "createdTime": "2021-05-07T01:04:59.000Z"
@@ -44,16 +44,15 @@ EXAMPLE RESPONSE
         {
             "id": "rec392PWjY5dRIAws",
             "fields": {
-                "Restaurant": "Roll n Roaster",
-                "Location": "Brooklyn",
-                "favorite dishes": "Roast Beef, Cheez fries",
+                "location": "Brooklyn",
+                "restaurant": "Roll n Roaster",
+                "favoriteDish": "Roast Beef",
                 "review": "tasty fast food "
             },
             "createdTime": "2021-05-07T01:04:59.000Z"
         }
     ],
     "offset": "rec392PWjY5dRIAws"
-}
 ```
 
 ### MVP/PostMVP
@@ -65,14 +64,18 @@ EXAMPLE RESPONSE
 - Render data on page 
 - Allow user to make posts
 - Allow users to like a post and keep track
-- Remove posts with too many dislikes 
+
+
 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
+
 
 - Allow users to filter posts by location
--Incorporate outside API 
+- Incorporate outside API 
+- Remove posts with too many dislikes 
+- highlight posts with lots of likes
+- filter reviews and allow users to add to existing reviews 
 
 ## Project Schedule
 
