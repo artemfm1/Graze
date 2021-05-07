@@ -98,9 +98,14 @@ This schedule will be used to keep track of your progress throughout the week an
 | Psuedo code | H | 5hrs|  |  |
 | Working with API | H | 4hrs|  |  |
 | debugging | H | 6hrs|   |  |
-| Styling | H | 8hrs|  |  |
-| Functionlity  | H | 10hrs|  |  |
-| Total | H | 35hrs| hrs |  |
+| Styling homepage | H | 4hrs|  |  |
+| Styling review page | H | 4hrs|  |  |
+| Styling buttons | L | 2hrs|  |  |
+| Building Hompage component  | H | 6hrs|  |  |
+| Building review page component | H | 6hrs|  |  
+| Building post component  | H | 6hrs|
+| Building delete component  | H | 6hrs|
+| Total | H | 49hrs| hrs |  |
 
 ## SWOT Analysis
 
