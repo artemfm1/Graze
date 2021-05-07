@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import { baseURL, config } from "./services";
 import './App.css';
 import Reviews from "./components/Reviews"
+import Form from "./components/Form"
 
 function App() {
   const [reviews, setReviews] = useState([])
@@ -35,7 +36,7 @@ function App() {
       </Route>
       
       <Route path="/new">
-        <h4>2nd link</h4>
+        <Form reviews={reviews} setToggleFetch={ setToggleFetch}/>
       </Route>
 
       <Route path="/edit/:id">
