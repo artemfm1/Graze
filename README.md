@@ -13,6 +13,7 @@ Graze is an application where users can post about their favorite dishes at rest
 https://whimsical.com/graze-E1wJ4oBmiHPY2TMSa18xLK
 
 ## Component Hierarchy
+
 https://whimsical.com/27c8GrTFa47EzbQsf7Mjy1
 
 ## API and Data Sample
