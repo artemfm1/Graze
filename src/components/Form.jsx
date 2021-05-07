@@ -1,13 +1,30 @@
 import { useState } from "react";
+import { baseURL, config } from "../services"
+import axios from "axios"
 
-function Form() {
-  const [location, setLocation] = useState(" ");
-  const [restaurant, setRestaurant] = useState(" ");
-  const [favoriteDish, setFavoriteDish] = useState(" ");
-  const [review, setReview] = useState(" ");
+function Form(props) {
+  const [location, setLocation] = useState("");
+  const [restaurant, setRestaurant] = useState("");
+  const [favoriteDish, setFavoriteDish] = useState("");
+  const [review, setReview] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    const newReview = {
+      restaurant,
+      location,
+      favoriteDish,
+      review,
+    };
+
+    await axios.post(baseURL, { fields: newReview }, config);
+    props.setToggleFetch((curr) => !curr);
+    
+  }
 
   return (
-    <form action="">
+    <form onSubmit={handleSubmit}>
 
       <label htmlFor="location">location</label>
       <input

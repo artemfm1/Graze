@@ -8,6 +8,7 @@ function Reviews(props) {
       <h4>location:{location }</h4>
       <h3>favorite dish:{favoriteDish}</h3>
       <h5>review:{review}</h5>
+      <button>Delete</button>
       
       
       
