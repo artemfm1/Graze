@@ -1,50 +1,48 @@
-import logo from './logo.svg';
+
+import { Route } from "react-router-dom";
+import { useEffect, useState } from "react"
+import axios from "axios"
+import Nav from "./components/Nav";
+import { baseURL, config } from "./services";
 import './App.css';
+import Reviews from "./components/Reviews"
 
 function App() {
+  const [reviews, setReviews] = useState([])
+  const [toggleFetch, setToggleFetch] = useState(false)
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      const resp = await axios.get(baseURL, config);
+      setReviews(resp.data.records)
+      console.log(resp.data.records)
+    }
+    fetchReviews()
+  }, [toggleFetch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+
+      <Route exact path="/">
+        <main>
+          {reviews.map((review) => (
+            <Reviews review={review}
+              setToggleFetch={ setToggleFetch}/>
+            
+          ))}
+        </main>
+      </Route>
+      
+      <Route path="/new">
+        <h4>2nd link</h4>
+      </Route>
+
+      <Route path="/edit/:id">
+        <h3>3rd linK</h3>
+      </Route>
+
     </div>
   );
 }
-
 export default App;
-
-import useEffect, useState from "react";
-function Form() {
-    const [username, setUsername] = useEffect("");
-    const [password, setPassword] = useState("");
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const newUser = {
-            username,
-            password,
-        }
-        await axios.post("https://someapithatisnotairtable.com/", newUser);
-        props.setToggleFetch((curr) => !curr);
-    }
-    render (
-        <form>
-            <label htmlFor="username">Username:</label>
-            <input type="text" value={username} onClick={(e) => setUsername(e.target.value)} />
-            <label htmlFor="password">Password:</label>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-            <button onSubmit={handleSubmit}>Submit!</button>
-        </form>
-    )
-}
-export default useEffect;
