@@ -1,4 +1,13 @@
+import axios from "axios"
+import { baseURL, config } from "../services"
+
 function Reviews(props) {
+  const deleteReview = async () => {
+    const specificURL = `${baseURL}/${props.review.id}`
+    await axios.delete(specificURL, config)
+    props.setToggleFetch((curr) => !curr)
+  }
+
   const { favoriteDish, location, restaurant, review } = props.review.fields
 
 
@@ -8,7 +17,7 @@ function Reviews(props) {
       <h4>location:{location }</h4>
       <h3>favorite dish:{favoriteDish}</h3>
       <h5>review:{review}</h5>
-      <button>Delete</button>
+      <button onClick={deleteReview}>Delete</button>
       
       
       
