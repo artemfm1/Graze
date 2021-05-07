@@ -13,63 +13,65 @@ Graze is an application where users can post about their favorite dishes at rest
 <iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/E1wJ4oBmiHPY2TMSa18xLK"></iframe>
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/27c8GrTFa47EzbQsf7Mjy1"></iframe>
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
+EXAMPLE RESPONSE
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "recjh8F0VXLt9sIT1",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "Restaurant": "Satay",
+                "Location": "Hoboken",
+                "favorite dishes": "Ayam Kelapa",
+                "review": "Excellent food, great service. Closed on Wednesdays"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-05-07T01:04:59.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
+            "id": "recI18HoMsgTsKHKL",
             "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
+                "Restaurant": "Casa de Paco",
+                "Location": "Newark",
+                "favorite dishes": "Octopus",
+                "review": "Great food, nice place to go out to "
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-05-07T01:04:59.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
+            "id": "rec392PWjY5dRIAws",
             "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
+                "Restaurant": "Roll n Roaster",
+                "Location": "Brooklyn",
+                "favorite dishes": "Roast Beef, Cheez fries",
+                "review": "tasty fast food "
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-05-07T01:04:59.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "rec392PWjY5dRIAws"
 }
 ```
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
+- Utilize airtable 
 - Render data on page 
-- Allow user to choose favorites 
+- Allow user to make posts
+- Allow users to like a post and keep track
+- Remove posts with too many dislikes 
+
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Allow users to filter posts by location
 
 ## Project Schedule
 
@@ -77,13 +79,13 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
+|May 6-7| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|May 13| Project Approval | Incomplete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|July 11| Pseudocode / actual code | Incomplete
+|July 12| Initial Clickable Model  | Incomplete
+|July 13| MVP | Incomplete
+|May 14| Presentations | Incomplete
 
 ## Timeframes
 
