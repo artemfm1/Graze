@@ -10,7 +10,7 @@ Graze is an application where users can post about their favorite dishes at rest
 
 ## Wireframes
 
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/E1wJ4oBmiHPY2TMSa18xLK"></iframe>gi
+https://whimsical.com/graze-E1wJ4oBmiHPY2TMSa18xLK
 
 ## Component Hierarchy
 https://whimsical.com/27c8GrTFa47EzbQsf7Mjy1
