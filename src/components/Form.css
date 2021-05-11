@@ -1,0 +1,16 @@
+.snipit{
+  
+  display: flex;
+  flex-direction: column;
+  background-color: lightpink;
+  color: blanchedalmond;
+  border: 1px solid black;
+  margin-top: 125px;
+  margin-bottom: 125px;
+  margin-right: 450px;
+  margin-left: 550px;
+  border-radius: 10px;
+  outline-style: groove;
+  outline-color: 
+  
+}

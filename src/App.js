@@ -1,12 +1,14 @@
 
 import { Route } from "react-router-dom";
-import { useEffect, useState } from "react"
+import { Component, useEffect, useState } from "react"
 import axios from "axios"
 import Nav from "./components/Nav";
 import { baseURL, config } from "./services";
 import './App.css';
 import Reviews from "./components/Reviews"
 import Form from "./components/Form"
+
+
 
 function App() {
   const [reviews, setReviews] = useState([])
@@ -26,6 +28,10 @@ function App() {
       <Nav />
 
       <Route exact path="/">
+        <Form reviews={reviews} setToggleFetch={ setToggleFetch}/>
+      </Route>
+      
+      <Route path="/new">
         <main>
           {reviews.map((review) => (
             <Reviews review={review}
@@ -35,13 +41,13 @@ function App() {
         </main>
       </Route>
       
-      <Route path="/new">
-        <Form reviews={reviews} setToggleFetch={ setToggleFetch}/>
-      </Route>
+
 
       <Route path="/edit/:id">
         <h3>3rd linK</h3>
       </Route>
+
+    
 
     </div>
   );

@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { baseURL, config } from "../services"
 import axios from "axios"
+import Reviews from "../components/Reviews"
+import "../components/Form.css"
 
 function Form(props) {
   const [location, setLocation] = useState("");
   const [restaurant, setRestaurant] = useState("");
   const [favoriteDish, setFavoriteDish] = useState("");
   const [review, setReview] = useState("");
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -24,6 +28,12 @@ function Form(props) {
   }
 
   return (
+
+
+    <div>
+
+    
+
     <form onSubmit={handleSubmit}>
 
       <label htmlFor="location">location</label>
@@ -57,8 +67,33 @@ function Form(props) {
       
 
       <button type="submit">Post</button>
+
+
+
+
+
     </form>
+      {props.reviews.map((review)=>{
+        return(
+          <>
+            <div className ="snipit">
+            <h1>
+              {review.fields.restaurant}
+            </h1>
+            <h2>
+              {review.fields.review}
+              </h2>
+              </div>
+            
+            </>
+        )
+    })}
+    </div>
+    
   );
+
+
+
 }
 
 export default Form;
