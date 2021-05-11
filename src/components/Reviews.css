@@ -1,6 +1,4 @@
 .review-containter{
-display: flex;
-  flex-direction: column;
   background-color: lightpink;
   color: blanchedalmond;
   border: 1px solid black;
@@ -8,5 +6,6 @@ display: flex;
   margin-bottom: 125px;
   margin-right: 450px;
   margin-left: 550px;
-  border-radius: 10px
+  border-radius: 10px;
+  display: grid;
 }

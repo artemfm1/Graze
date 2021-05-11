@@ -40,14 +40,14 @@ function Form(props) {
       <input
         type="text"
         id="location"
-        value={location}
+        required value={location}
         onChange={(e) => setLocation(e.target.value)} />
       
       <label htmlFor="restaurant">restaurant</label>
       <input
         type="text"
         id="restaurant"
-        value={restaurant}
+        required value={restaurant}
         onChange={(e) => setRestaurant(e.target.value)} />
       
       <label htmlFor="favoriteDish">favorite dish</label>
