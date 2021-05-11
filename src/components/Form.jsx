@@ -79,10 +79,11 @@ function Form(props) {
             <div className ="snipit">
             <h1>
               {review.fields.restaurant}
-            </h1>
-            <h2>
+              </h1>
+              <h6>{review.fields.location}</h6>
+            <h3>
               {review.fields.review}
-              </h2>
+              </h3>
               </div>
             
             </>

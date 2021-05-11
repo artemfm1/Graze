@@ -7,6 +7,7 @@ import { baseURL, config } from "./services";
 import './App.css';
 import Reviews from "./components/Reviews"
 import Form from "./components/Form"
+import Footer from "./components/Footer"
 
 
 
@@ -44,10 +45,12 @@ function App() {
 
 
       <Route path="/edit/:id">
-        <h3>3rd linK</h3>
+        <h3>Graze is an application where users can post about their favorite dishes at restaurants.</h3>
       </Route>
 
     
+      
+      <Footer />
 
     </div>
   );
