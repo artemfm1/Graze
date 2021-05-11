@@ -8,6 +8,7 @@ import './App.css';
 import Reviews from "./components/Reviews"
 import Form from "./components/Form"
 import Footer from "./components/Footer"
+import About from "./components/About"
 
 
 
@@ -45,7 +46,7 @@ function App() {
 
 
       <Route path="/edit/:id">
-        <h3>Graze is an application where users can post about their favorite dishes at restaurants.</h3>
+            <About />
       </Route>
 
     
