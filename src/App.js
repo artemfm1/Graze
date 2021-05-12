@@ -34,7 +34,7 @@ function App() {
       </Route>
       
       <Route path="/new">
-        <main>
+        <main className="review-containter">
           {reviews.map((review) => (
             <Reviews review={review}
               setToggleFetch={ setToggleFetch}/>

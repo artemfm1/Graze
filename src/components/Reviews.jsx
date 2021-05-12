@@ -23,7 +23,7 @@ function Reviews(props) {
   
 
   return (
-    <main className="review-containter">
+    
     <div className ="">
       <h3>restaurant: {restaurant}</h3>
       <h4>location:{location }</h4>
@@ -39,7 +39,7 @@ function Reviews(props) {
       
       
       </div>
-      </main>
+      
     
   )
   

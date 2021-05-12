@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.review-containter{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 100px !important;
+  background-color: lightpink;
+  border: 1px solid black;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}

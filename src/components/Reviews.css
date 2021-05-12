@@ -1,17 +1,17 @@
 .review-containter{
-  background-color: lightpink;
+  /* background-color: lightpink;
   color: blanchedalmond;
   border: 1px solid black;
   margin-top: 125px;
   margin-bottom: 125px;
   margin-right: 450px;
   margin-left: 550px;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns:  1fr, 1fr, 1fr; 
-  /* grid-template-rows: repeat(3fr, 1fr); */
-  grid-gap:20px;
-  height: 200x;
-  width:200px;
+  border-radius: 10px; */
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap:20px; */
+  /* height: 200x;
+  width:200px; */ 
 }
 
