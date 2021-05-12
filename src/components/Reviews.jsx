@@ -20,9 +20,11 @@ function Reviews(props) {
       
   
   }
+  
 
   return (
-    <div className ="review-containter">
+    <main className="review-containter">
+    <div className ="">
       <h3>restaurant: {restaurant}</h3>
       <h4>location:{location }</h4>
       <h3>favorite dish:{favoriteDish}</h3>
@@ -36,8 +38,11 @@ function Reviews(props) {
 
       
       
-    </div>
+      </div>
+      </main>
+    
   )
+  
 }
 
 export default Reviews;

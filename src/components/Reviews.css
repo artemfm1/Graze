@@ -8,6 +8,10 @@
   margin-left: 550px;
   border-radius: 10px;
   display: grid;
-  justify-items: center;
-
+  grid-template-columns:  1fr, 1fr, 1fr; 
+  /* grid-template-rows: repeat(3fr, 1fr); */
+  grid-gap:20px;
+  height: 200x;
+  width:200px;
 }
+
