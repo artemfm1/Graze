@@ -4,6 +4,7 @@ import axios from "axios"
 import Reviews from "../components/Reviews"
 import "../components/Form.css"
 
+
 function Form(props) {
   const [location, setLocation] = useState("");
   const [restaurant, setRestaurant] = useState("");
@@ -14,6 +15,7 @@ function Form(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    //e.target.reset()
 
     const newReview = {
       restaurant,
@@ -24,43 +26,57 @@ function Form(props) {
 
     await axios.post(baseURL, { fields: newReview }, config);
     props.setToggleFetch((curr) => !curr);
-    
+    setLocation("")
+    setRestaurant("")
+    setFavoriteDish("")
+    setReview("")
   }
 
   return (
 
+  
 
-    <div>
+    <div className ="form-container">
 
     
 
     <form onSubmit={handleSubmit}>
 
-      <label htmlFor="location">location</label>
-      <input
+      <label htmlFor="location"> </label>
+        <input
+        placeholder="location"
         type="text"
         id="location"
         required value={location}
-        onChange={(e) => setLocation(e.target.value)} />
+          onChange={(e) => setLocation(e.target.value)} />
+        <br></br>
       
-      <label htmlFor="restaurant">restaurant</label>
-      <input
+      <label htmlFor="restaurant"> </label>
+        <input
+        placeholder="restaurant"
         type="text"
         id="restaurant"
         required value={restaurant}
         onChange={(e) => setRestaurant(e.target.value)} />
-      
-      <label htmlFor="favoriteDish">favorite dish</label>
-      <input
+      <br></br>      
+      <label htmlFor="favoriteDish"></label>
+        <input
+        placeholder="favorite dish"
         type="text"
         id="favoriteDish"
         value={favoriteDish}
         onChange={(e) => setFavoriteDish(e.target.value)} />
-      
-      <label htmlFor="review">review</label>
-      <input
-        type="text"
-        id="review"
+      <br></br>
+      <label htmlFor="review"> </label>
+        <textarea
+        //className="review-input"          
+        placeholder="review"
+          //size="150"
+          
+          
+          rows={10}
+          cols={23}
+          id="review"
         value={review}
         onChange={(e) => setReview(e.target.value)} />
       
@@ -69,26 +85,29 @@ function Form(props) {
       <button type="submit">Post</button>
 
 
+      
 
 
-
-    </form>
+      </form>
+      
+      <div className ="tile-review">
       {props.reviews.map((review)=>{
         return(
-          <>
-            <div className ="snipit">
-            <h1>
+            <div class ="snipit">
+            <h1 id="snipit-text">
               {review.fields.restaurant}
               </h1>
-              <h6>{review.fields.location}</h6>
-            <h3>
+              <h6 id="snipit-text">{review.fields.location}</h6>
+            <h3 id="snipit-text">
               {review.fields.review}
-              </h3>
-              </div>
+            </h3>
             
-            </>
+          </div>
+
+              
         )
-    })}
+      })}
+        </div>
     </div>
     
   );

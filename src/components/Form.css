@@ -1,16 +1,41 @@
+.form-container{
+
+
+}
+
+
+
+
+
 .snipit{
-  
-  display: flex;
-  flex-direction: column;
-  background-color: lightpink;
-  color: blanchedalmond;
+
+  background-color: salmon;
+  color: white;
   border: 1px solid black;
-  margin-top: 125px;
+  /* margin-top: 125px;
   margin-bottom: 125px;
-  margin-right: 450px;
-  margin-left: 550px;
+  margin-right: 900px;
+  margin-left: 125px; */
   border-radius: 10px;
   outline-style: groove;
-  
-  
+
+
+
+}
+
+#snipit-text{
+  color: grey;
+
+}
+
+.tile-review{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap:20px
+}
+
+.review-input{
+  line-height: 100px;
+  width: 200px;
 }
