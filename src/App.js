@@ -9,6 +9,7 @@ import Reviews from "./components/Reviews"
 import Form from "./components/Form"
 import Footer from "./components/Footer"
 import About from "./components/About"
+import "./components/Reviews.css"
 
 
 

@@ -5,7 +5,12 @@ body {
     sans-serif, 'Itim', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(114, 111, 138);
+  background-image: url("https://images.unsplash.com/photo-1556710986-90888c43367b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTN8fGJ1cmdlciUyMGJvcmRlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+
 }
 
 code {

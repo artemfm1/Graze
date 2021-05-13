@@ -1,9 +1,9 @@
 import axios from "axios"
 import { baseURL, config } from "../services"
-import Button from "./Button"
-import "../components/Reviews.css"
+
 import {useState} from "react"
 
+import "./Reviews.css"
 
 function Reviews(props) {
   const [like, setLike] = useState(1)
