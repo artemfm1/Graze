@@ -103,7 +103,7 @@ This schedule will be used to keep track of your progress throughout the week an
 | Styling review page | H | 4hrs| 3 | 3 |
 | Styling buttons | L | 2hrs| 2 | 2 | 2 |
 | Building Hompage component  | H | 6hrs| 6 | 6 |
-| Building review page component | H | 6hrs| 6 |  
+| Building review page component | H | 6hrs| 6 | 3 | 
 | Building post component  | H | 6hrs|6 | 6 |
 | Building delete component  | H | 6hrs|6 | 6 |
 | Total | H | 49hrs| hrs | 43 |
