@@ -37,7 +37,7 @@ function Reviews(props) {
       <h4>location:{location }</h4>
       <h3>favorite dish:{favoriteDish}</h3>
       <h5>review:{review}</h5>
-      <h1>💟 {likes}</h1>
+      <h1>💝  {likes}</h1>
       <FontAwesomeIcon icon={faHeart} onClick={handleSubmit} />
       <br></br>
       <FontAwesomeIcon icon={faDumpsterFire} onClick={deleteReview} />
