@@ -37,7 +37,6 @@ font-size: 15px;
 @media only screen and (max-width: 600px){ 
   .tile-review{ 
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
     grid-gap:2px; 
     margin-left: 20px;
     margin-right: 20px;
