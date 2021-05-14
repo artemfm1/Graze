@@ -16,7 +16,7 @@ function Form(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    //e.target.reset()
+    
 
     const newReview = {
       restaurant,
@@ -93,15 +93,15 @@ function Form(props) {
         return(
           <div class="snipit">
             
-            <h2 id="snipit-text">
+            <h2 id="snipit-text">restaurant:
               {review.fields.restaurant}
             </h2>
             
-              <h4 id="snipit-text">{review.fields.location}</h4>
+              <h3 id="snipit-text">location:{review.fields.location}</h3>
             
-            <h3 id="snipit-text">
+            <h4 id="snipit-text">
               {review.fields.review}
-            </h3>
+            </h4>
             
           </div>  
         )

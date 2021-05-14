@@ -4,9 +4,11 @@
 
 Graze.
 
+https://grazeapp.netlify.app
+
 ## Project Description
 
-Graze is an application where users can post about their favorite dishes at restaurants. Users can read through previous reviews and "thumbs up" or "thumbs down" reviews with too many "thumbs down will be deleted. 
+Graze is an application where users can post about their favorite dishes at restaurants. Users can read through previous reviews and like their favorite ones or delete unpopular reviews. 
 
 ## Wireframes
 
@@ -69,6 +71,7 @@ EXAMPLE RESPONSE
 
 
 
+
 #### PostMVP  
 
 
@@ -96,17 +99,17 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Psuedo code | H | 5hrs|  |  |
-| Working with API | H | 4hrs|  |  |
-| debugging | H | 6hrs|   |  |
-| Styling homepage | H | 4hrs|  |  |
-| Styling review page | H | 4hrs|  |  |
-| Styling buttons | L | 2hrs|  |  |
-| Building Hompage component  | H | 6hrs|  |  |
-| Building review page component | H | 6hrs|  |  
-| Building post component  | H | 6hrs|
-| Building delete component  | H | 6hrs|
-| Total | H | 49hrs| hrs |  |
+| Psuedo code | H | 5hrs| 3 | 3 |
+| Working with API | H | 4hrs| 3 | 3 |
+| debugging | H | 6hrs| 6  | 6 |
+| Styling homepage | H | 4hrs| 4 | 5 |
+| Styling review page | H | 4hrs| 3 | 3 |
+| Styling buttons | L | 2hrs| 2 | 2 | 2 |
+| Building Hompage component  | H | 6hrs| 6 | 6 |
+| Building review page component | H | 6hrs| 6 |  
+| Building post component  | H | 6hrs|6 | 6 |
+| Building delete component  | H | 6hrs|6 | 6 |
+| Total | H | 49hrs| hrs | 43 |
 
 ## SWOT Analysis
 

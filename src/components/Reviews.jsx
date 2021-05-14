@@ -37,13 +37,16 @@ function Reviews(props) {
       <h4>location:{location }</h4>
       <h3>favorite dish:{favoriteDish}</h3>
       <h5>review:{review}</h5>
-      <h1> {likes}</h1>
-      <FontAwesomeIcon icon={faDumpsterFire} onClick={deleteReview}/>
-      {/* { <Button like ={props.review.fields.likes}></Button> } */}
-      <FontAwesomeIcon icon={faHeart} onClick={handleSubmit}/>
-
-
+      <h1>💟 {likes}</h1>
+      <FontAwesomeIcon icon={faHeart} onClick={handleSubmit} />
+      <br></br>
+      <FontAwesomeIcon icon={faDumpsterFire} onClick={deleteReview} />
       
+      
+      
+
+
+      <p></p>
       
       </div>
       

@@ -27,18 +27,6 @@
 
 
 
-.review-containter{
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); */
-  /* grid-gap: 100px !important; */
-  /* background-color: lightpink; */
-  /* border: 1px solid black; */
-  /* margin-left: 50px;
-  margin-right: 50px; */
-
-
-}
 
 
 @media only screen and (max-width: 600px){ 
