@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { baseURL, config } from "../services"
 import axios from "axios"
-import Reviews from "../components/Reviews"
+import Reviews from "../components/Reviews.css"
 import "../components/Form.css"
 
 
@@ -11,7 +11,7 @@ function Form(props) {
   const [restaurant, setRestaurant] = useState("");
   const [favoriteDish, setFavoriteDish] = useState("");
   const [review, setReview] = useState("");
-
+  const [likes, setLikes] = useState(0)
 
 
   const handleSubmit = async (e) => {
@@ -23,6 +23,7 @@ function Form(props) {
       location,
       favoriteDish,
       review,
+      likes,
     };
 
     await axios.post(baseURL, { fields: newReview }, config);
@@ -38,8 +39,6 @@ function Form(props) {
   
 
     <div className ="form-container">
-
-    
 
     <form onSubmit={handleSubmit}>
 
@@ -60,7 +59,8 @@ function Form(props) {
         required value={restaurant}
         onChange={(e) => setRestaurant(e.target.value)} />
       <br></br>      
-      <label htmlFor="favoriteDish"></label>
+      
+        <label htmlFor="favoriteDish"></label>
         <input
         placeholder="favorite dish"
         type="text"
@@ -68,13 +68,10 @@ function Form(props) {
         value={favoriteDish}
         onChange={(e) => setFavoriteDish(e.target.value)} />
       <br></br>
-      <label htmlFor="review"> </label>
-        <textarea
-        //className="review-input"          
+      
+        <label htmlFor="review"> </label>
+        <textarea          
         placeholder="review"
-          //size="150"
-          
-          
           rows={10}
           cols={23}
           id="review"
@@ -94,18 +91,19 @@ function Form(props) {
       <div className ="tile-review">
       {props.reviews.map((review)=>{
         return(
-            <div class ="snipit">
-            <h1 id="snipit-text">
+          <div class="snipit">
+            
+            <h2 id="snipit-text">
               {review.fields.restaurant}
-              </h1>
-              <h6 id="snipit-text">{review.fields.location}</h6>
+            </h2>
+            
+              <h4 id="snipit-text">{review.fields.location}</h4>
+            
             <h3 id="snipit-text">
               {review.fields.review}
             </h3>
             
-          </div>
-
-              
+          </div>  
         )
       })}
         </div>

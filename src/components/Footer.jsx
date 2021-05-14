@@ -1,7 +1,10 @@
+import "../components/Footer.css"
+
+
 function Footer() {
   return (
-    <div>
-      <h6>graze app 2021   af</h6>
+    <div className="footer">
+      <h6>graze app 2021  af</h6>
     </div>
   )
 }
