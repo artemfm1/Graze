@@ -66,10 +66,7 @@ EXAMPLE RESPONSE
 - Utilize airtable 
 - Render data on page 
 - Allow user to make posts
-- Allow users to like a post and keep track
-
-
-
+- Allow users to like a post and keep track of the value
 
 
 #### PostMVP  
